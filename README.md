@@ -30,7 +30,7 @@ While the module is not publish in drupal.org repository, you need to manually a
 Then, to install the module just run:
 
 ```bash
-composer require tivie/image-lightgallery-formatter
+composer require drupal/image-lightgallery-formatter
 ```
 
 ### Downloading the tarball
