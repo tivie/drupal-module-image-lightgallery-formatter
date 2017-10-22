@@ -1,0 +1,22 @@
+lightgallery:
+  version: VERSION
+  js:
+    lib/lightgallery/js/lightgallery-all.js: {}
+  css:
+    component:
+      lib/lightgallery/css/lg-fb-comment-box.css: {}
+      lib/lightgallery/css/lg-transitions.css: {}
+      lib/lightgallery/css/lightgallery.css: {}
+  dependencies:
+    - core/jquery
+
+image_lightgallery:
+  version: VERSION
+  js:
+    js/init.js: {}
+  css:
+    component:
+      css/lightgallery-module.css: {}
+
+  dependencies:
+    - image_lightgallery_formatter/lightgallery

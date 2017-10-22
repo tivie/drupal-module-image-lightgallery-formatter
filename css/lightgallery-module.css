@@ -1,0 +1,76 @@
+.lightgallery {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.lightgallery > * {
+    padding: 1px;
+    flex: 1;
+    min-width: calc(100%/3);
+}
+.lightgallery .lg-thumbnail a {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+/** trick to create a 16:9 box **/
+.lightgallery .lg-thumbnail a:before {
+    content: "";
+    display: block;
+    margin-top: 56.25%
+}
+
+.lightgallery .lg-thumbnail a img {
+    width: 100%;
+    height: 100%;
+    position:  absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.lightgallery .lg-thumbnail a .lg-thumbnail-zoom {
+    position: absolute;
+
+    /* 1 pixel because of (.lightgallery > *) 1px padding */
+    top: 1px;
+    bottom: 1px;
+    left: 1px;
+    right: 1px;
+
+    color: #ccc;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.lightgallery .lg-thumbnail a .lg-thumbnail-zoom i {
+    background: -webkit-linear-gradient(#ccc, #555);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/** animations on hover **/
+
+.lightgallery .lg-thumbnail a .lg-thumbnail-zoom {
+    display: none;
+}
+
+.lightgallery .lg-thumbnail a:hover .lg-thumbnail-zoom {
+    display: block;
+
+}
+
+.lightgallery .lg-thumbnail a img {
+    transition: all 0.15s ease-in-out;
+}
+
+.lightgallery .lg-thumbnail a:hover img {
+    transform: scale(1.1);
+}

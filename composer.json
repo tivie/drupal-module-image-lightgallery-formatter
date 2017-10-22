@@ -1,0 +1,20 @@
+{
+  "name": "drupal/image_lightgallery_formatter",
+  "type": "drupal-module",
+  "description": "An image field formatter based on jquery lightgallery library",
+  "keywords": ["Drupal", "lightgallery", "image", "field formatter", "gallery"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Estevão Santos (tivie)",
+      "role": "Developer"
+    }
+  ],
+  "homepage": "https://www.drupal.org/project/image_lightgallery_formatter",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/image_lightgallery_formatter",
+    "source": "http://cgit.drupalcode.org/image_lightgallery_formatter"
+  },
+  "require": { }
+}
